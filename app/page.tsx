@@ -60,7 +60,11 @@ export default function Home() {
 
   const toggleRPGMode = () => {
     setIsRPGMode(!isRPGMode);
-    if (!isRPGMode) {
+    if (isRPGMode) {
+      toast.success('💼 Switched to Professional Mode', {
+        duration: 2000,
+      });
+    } else {
       toast.success('🎮 Welcome to RPG Mode! Explore my career as an adventure!', {
         duration: 3000,
       });

@@ -19,6 +19,9 @@ import {
   Award,
   Target
 } from 'lucide-react';
+import ProjectsSection from './ProjectsSection';
+import TechnicalSkills from './TechnicalSkills';
+import StickyContact from './StickyContact';
 
 interface Analytics {
   visitorCount: number;
@@ -37,46 +40,44 @@ export default function ProfessionalLayout() {
     rpgModeUsage: 23
   });
 
-  const [isRPGMode, setIsRPGMode] = useState(false);
-
-  const toggleMode = () => setIsRPGMode(!isRPGMode);
+  // Professional mode only - no RPG toggle needed
 
   const productIdeas = [
     {
       company: "LinkedIn",
       icon: <Briefcase className="w-6 h-6 text-blue-600" />,
       idea: "Add a filter to show companies that sponsor H1B visas — saving time for both recruiters and applicants.",
-      impact: "Reduces application time by 40%"
+      impact: "Potential time savings for international job seekers"
     },
     {
       company: "Google Maps",
       icon: <Rocket className="w-6 h-6 text-green-600" />,
       idea: "Indicate upcoming traffic signals and elevation changes for safer, more predictable driving experiences.",
-      impact: "Improves driver preparedness by 60%"
+      impact: "Enhanced driver preparedness and safety"
     },
     {
       company: "Instagram",
       icon: <Lightbulb className="w-6 h-6 text-pink-500" />,
       idea: "Give users an option to disable infinite scroll for Reels. Supports mindful content consumption and better UX metrics.",
-      impact: "Increases user control and satisfaction"
+      impact: "Improved user control and content consumption patterns"
     },
     {
       company: "Spotify",
       icon: <Laptop className="w-6 h-6 text-green-500" />,
       idea: "Reduce 3s lag when streaming on Apple HomePod by optimizing AirPlay buffer or offering direct WiFi pairing.",
-      impact: "Eliminates 3-second delay for seamless experience"
+      impact: "Seamless audio experience across devices"
     },
     {
       company: "Apple",
       icon: <Code2 className="w-6 h-6 text-gray-800" />,
       idea: "Expand HomePod compatibility to third-party smart devices, like Alexa's ecosystem, for better user choice and adoption.",
-      impact: "Increases smart home adoption by 35%"
+      impact: "Increased smart home ecosystem flexibility"
     },
     {
       company: "Streaming Platforms",
       icon: <Rocket className="w-6 h-6 text-purple-500" />,
       idea: "Collaborate to offer a unified student plan (~$5/mo) allowing limited cross-platform viewing to boost engagement and loyalty.",
-      impact: "Reduces student churn by 45%"
+      impact: "More accessible entertainment for students"
     }
   ];
 
@@ -88,11 +89,8 @@ export default function ProfessionalLayout() {
   ];
 
   return (
-    <div className={`min-h-screen transition-all duration-700 ${
-      isRPGMode 
-        ? "bg-gradient-to-br from-purple-900 via-black to-indigo-900 text-gray-100" 
-        : "bg-white text-gray-900"
-    }`}>
+    <div className="min-h-screen bg-white text-gray-900">
+      <StickyContact />
       
       {/* Header with Analytics */}
       <header className="flex items-center justify-between p-6 border-b border-gray-200">
@@ -115,16 +113,12 @@ export default function ProfessionalLayout() {
         </div>
         
         <div className="flex items-center space-x-4">
-          <button
-            onClick={toggleMode}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              isRPGMode 
-                ? "bg-purple-600 text-white hover:bg-purple-700" 
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-            }`}
+          <a
+            href="mailto:sb7867@nyu.edu"
+            className="px-4 py-2 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300"
           >
-            {isRPGMode ? "🎮 RPG Mode" : "💼 Recruiter Mode"}
-          </button>
+            Contact Me
+          </a>
         </div>
       </header>
 
@@ -187,8 +181,35 @@ export default function ProfessionalLayout() {
         </motion.div>
       </section>
 
-      {/* Product Thinking Playground */}
+      {/* About Section */}
       <section className="px-6 md:px-12 py-16 bg-gray-50">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto text-center"
+        >
+          <h3 className="text-3xl font-bold mb-6">About My Product Philosophy</h3>
+          <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+            <p>
+              I believe great products emerge from understanding the human behind every data point. 
+              My approach combines technical depth with user empathy, always asking: "How does this solve a real problem?"
+            </p>
+            <p>
+              From building AI tools that save developers time to creating websites that generate leads, 
+              I focus on measurable impact. Every project teaches me something new about user behavior, 
+              technical constraints, and the art of shipping products that matter.
+            </p>
+            <p>
+              This portfolio itself is an experiment in engagement design — testing how different presentation 
+              modes affect user behavior and demonstrating my commitment to data-driven product decisions.
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Product Thinking Playground */}
+      <section className="px-6 md:px-12 py-16 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -199,7 +220,7 @@ export default function ProfessionalLayout() {
             <h3 className="text-3xl font-bold mb-4">🧠 Product Thinking Playground</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               I analyze everyday products and find ways to make them smarter, faster, and more human-centered. 
-              Here are ideas that reflect my PM mindset and problem-solving approach:
+              These are idea explorations that reflect my PM mindset and problem-solving approach:
             </p>
           </div>
 
@@ -228,7 +249,7 @@ export default function ProfessionalLayout() {
       </section>
 
       {/* Experience Timeline */}
-      <section className="px-6 md:px-12 py-16">
+      <section className="px-6 md:px-12 py-16 bg-gray-50">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -267,6 +288,12 @@ export default function ProfessionalLayout() {
           </div>
         </motion.div>
       </section>
+
+      {/* Projects Section */}
+      <ProjectsSection />
+
+      {/* Technical Skills */}
+      <TechnicalSkills />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
