@@ -49,10 +49,10 @@ const projects: Project[] = [
     solution: 'Created a unified Flask API wrapper with standardized endpoints, automatic retry logic, and comprehensive error handling for multiple AI providers.',
     techStack: ['Python', 'Flask', 'React', 'PostgreSQL', 'Docker', 'Redis'],
     metrics: [
-      { label: 'Integration Time', value: '75% reduction', icon: <Clock className="w-4 h-4" /> },
-      { label: 'API Response Time', value: '<200ms avg', icon: <Zap className="w-4 h-4" /> },
-      { label: 'Error Rate', value: '95% reduction', icon: <Target className="w-4 h-4" /> },
-      { label: 'Developer Adoption', value: '12+ teams', icon: <Users className="w-4 h-4" /> }
+      { label: 'Integration Time', value: '75% reduction', icon: 'Clock' },
+      { label: 'API Response Time', value: '<200ms avg', icon: 'Zap' },
+      { label: 'Error Rate', value: '95% reduction', icon: 'Target' },
+      { label: 'Developer Adoption', value: '12+ teams', icon: 'Users' }
     ],
     challenges: [
       'Managing rate limits across different AI providers',
@@ -78,10 +78,10 @@ const projects: Project[] = [
     solution: 'Built a modern React website with TypeScript, integrated contact forms, SEO optimization, and responsive design for all devices.',
     techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Web3Forms', 'Vercel'],
     metrics: [
-      { label: 'Page Load Speed', value: '2.1s → 0.8s', icon: <Zap className="w-4 h-4" /> },
-      { label: 'Mobile Traffic', value: '+180% increase', icon: <Smartphone className="w-4 h-4" /> },
-      { label: 'Lead Generation', value: '+250% more inquiries', icon: <Users className="w-4 h-4" /> },
-      { label: 'SEO Score', value: '95/100', icon: <Search className="w-4 h-4" /> }
+      { label: 'Page Load Speed', value: '2.1s → 0.8s', icon: 'Zap' },
+      { label: 'Mobile Traffic', value: '+180% increase', icon: 'Smartphone' },
+      { label: 'Lead Generation', value: '+250% more inquiries', icon: 'Users' },
+      { label: 'SEO Score', value: '95/100', icon: 'Search' }
     ],
     challenges: [
       'Optimizing image loading for legal document previews',
@@ -107,10 +107,10 @@ const projects: Project[] = [
     solution: 'Created a hybrid portfolio with professional default mode and interactive RPG mode to showcase both technical skills and product thinking.',
     techStack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React Hooks'],
     metrics: [
-      { label: 'Time on Page', value: '4.2x longer', icon: <Clock className="w-4 h-4" /> },
-      { label: 'RPG Mode Usage', value: '23% of visitors', icon: <Target className="w-4 h-4" /> },
-      { label: 'Mobile Engagement', value: '68% mobile users', icon: <Smartphone className="w-4 h-4" /> },
-      { label: 'Bounce Rate', value: '45% reduction', icon: <BarChart3 className="w-4 h-4" /> }
+      { label: 'Time on Page', value: '4.2x longer', icon: 'Clock' },
+      { label: 'RPG Mode Usage', value: '23% of visitors', icon: 'Target' },
+      { label: 'Mobile Engagement', value: '68% mobile users', icon: 'Smartphone' },
+      { label: 'Bounce Rate', value: '45% reduction', icon: 'BarChart3' }
     ],
     challenges: [
       'Balancing professional credibility with creative expression',
@@ -146,6 +146,19 @@ export default function ProjectsSection() {
       case 'demo': return <ExternalLink className="w-4 h-4" />;
       case 'case-study': return <Code2 className="w-4 h-4" />;
       default: return <ExternalLink className="w-4 h-4" />;
+    }
+  };
+
+  const getMetricIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'Clock': return <Clock className="w-4 h-4" />;
+      case 'Zap': return <Zap className="w-4 h-4" />;
+      case 'Target': return <Target className="w-4 h-4" />;
+      case 'Users': return <Users className="w-4 h-4" />;
+      case 'Smartphone': return <Smartphone className="w-4 h-4" />;
+      case 'Search': return <Search className="w-4 h-4" />;
+      case 'BarChart3': return <BarChart3 className="w-4 h-4" />;
+      default: return <Target className="w-4 h-4" />;
     }
   };
 
@@ -220,7 +233,7 @@ export default function ProjectsSection() {
                   {project.metrics.map((metric, metricIndex) => (
                     <div key={metricIndex} className="bg-white rounded-lg p-4 border border-gray-200">
                       <div className="flex items-center space-x-2 mb-1">
-                        {metric.icon}
+                        {getMetricIcon(metric.icon)}
                         <span className="text-sm text-gray-600">{metric.label}</span>
                       </div>
                       <div className="text-lg font-bold text-gray-900">{metric.value}</div>
