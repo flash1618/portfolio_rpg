@@ -9,8 +9,6 @@ import {
   Users, 
   Clock, 
   Target,
-  Flask,
-  React,
   Database,
   Globe,
   Smartphone,
@@ -28,7 +26,7 @@ interface Project {
   metrics: {
     label: string;
     value: string;
-    icon: React.ReactNode;
+    icon: string;
   }[];
   challenges: string[];
   learnings: string[];
@@ -103,7 +101,7 @@ const projects: Project[] = [
     id: 'rpg-portfolio',
     title: 'Interactive RPG Portfolio (Meta-Project)',
     description: 'Built this gamified portfolio to explore user engagement patterns and test dual-mode UX design for professional presentation.',
-    problem: 'Traditional portfolios are static and don't demonstrate product thinking or user engagement skills to potential employers.',
+    problem: 'Traditional portfolios are static and do not demonstrate product thinking or user engagement skills to potential employers.',
     solution: 'Created a hybrid portfolio with professional default mode and interactive RPG mode to showcase both technical skills and product thinking.',
     techStack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React Hooks'],
     metrics: [
