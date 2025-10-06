@@ -206,3 +206,5 @@ export default function QuestModal({ quest, isOpen, onClose }: QuestModalProps) 
     </AnimatePresence>
   );
 }
+
+

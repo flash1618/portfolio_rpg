@@ -8,6 +8,7 @@ import QuestCard from '@/components/QuestCard';
 import QuestModal from '@/components/QuestModal';
 import AchievementBadge from '@/components/AchievementBadge';
 import ProductInsights from '@/components/ProductInsights';
+import ProfessionalLayout from '@/components/ProfessionalLayout';
 import { quests, achievements, character } from '@/lib/data';
 import { Quest } from '@/lib/data';
 import { 
@@ -31,6 +32,7 @@ export default function Home() {
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [visitedSections, setVisitedSections] = useState<string[]>([]);
+  const [isRPGMode, setIsRPGMode] = useState(false);
 
   // Track section visits for achievements
   useEffect(() => {
@@ -56,10 +58,29 @@ export default function Home() {
     setSelectedQuest(null);
   };
 
+  const toggleRPGMode = () => {
+    setIsRPGMode(!isRPGMode);
+    if (!isRPGMode) {
+      toast.success('🎮 Welcome to RPG Mode! Explore my career as an adventure!', {
+        duration: 3000,
+      });
+    }
+  };
+
   const completedQuests = quests.filter(q => q.status === 'completed');
   const availableQuests = quests.filter(q => q.status === 'available');
   const unlockedAchievements = achievements.filter(a => a.unlocked);
 
+  // If in professional mode, show the clean layout
+  if (!isRPGMode) {
+    return (
+      <div className="min-h-screen">
+        <ProfessionalLayout />
+      </div>
+    );
+  }
+
+  // RPG Mode - Original game-like interface
   const renderHomeSection = () => (
     <motion.div
       key="home"
@@ -108,10 +129,10 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => setActiveSection('about')}
+              onClick={() => setIsRPGMode(false)}
               className="border border-game-purple text-game-purple px-8 py-4 rounded-xl font-bold text-lg flex items-center space-x-2 hover:bg-game-purple/10 transition-all duration-300"
             >
-              <span>Learn More</span>
+              <span>Switch to Professional Mode</span>
               <ArrowRight className="w-5 h-5" />
             </motion.button>
           </div>
@@ -399,7 +420,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <Navigation activeSection={activeSection} onSectionChange={setActiveSection} />
+      <Navigation 
+        activeSection={activeSection} 
+        onSectionChange={setActiveSection}
+        isRPGMode={isRPGMode}
+        onToggleMode={toggleRPGMode}
+      />
       
       <AnimatePresence mode="wait">
         {activeSection === 'home' && renderHomeSection()}

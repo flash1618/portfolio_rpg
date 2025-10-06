@@ -18,9 +18,11 @@ import {
 interface NavigationProps {
   activeSection: string;
   onSectionChange: (section: string) => void;
+  isRPGMode?: boolean;
+  onToggleMode?: () => void;
 }
 
-export default function Navigation({ activeSection, onSectionChange }: NavigationProps) {
+export default function Navigation({ activeSection, onSectionChange, isRPGMode = true, onToggleMode }: NavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
@@ -85,8 +87,23 @@ export default function Navigation({ activeSection, onSectionChange }: Navigatio
               })}
             </div>
 
-            {/* Social Links */}
+            {/* Mode Toggle & Social Links */}
             <div className="flex items-center space-x-4">
+              {onToggleMode && (
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={onToggleMode}
+                  className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                    isRPGMode
+                      ? 'bg-game-purple/20 text-game-purple border border-game-purple/50'
+                      : 'bg-gray-100 text-gray-700 border border-gray-300'
+                  }`}
+                >
+                  {isRPGMode ? '🎮 RPG Mode' : '💼 Professional Mode'}
+                </motion.button>
+              )}
+              
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (

@@ -161,3 +161,5 @@ export default function QuestCard({ quest, onSelect }: QuestCardProps) {
     </motion.div>
   );
 }
+
+
