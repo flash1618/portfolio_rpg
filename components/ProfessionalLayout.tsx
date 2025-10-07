@@ -55,55 +55,55 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
     {
       company: "LinkedIn",
       icon: <Briefcase className="w-6 h-6 text-blue-600" />,
-      idea: "Add an H-1B sponsorship filter to streamline job search for international candidates and recruiters.",
+      idea: "Add an 'H-1B Sponsor' filter in job search to save recruiters and applicants hours.",
       impact: "Could streamline recruitment process for global talent"
     },
     {
       company: "Google Maps",
       icon: <Rocket className="w-6 h-6 text-green-600" />,
-      idea: "Introduce a 'smart signal awareness' feature using AI to detect upcoming red lights and elevation changes.",
+      idea: "Introduce visual signal awareness indicators for better driving anticipation.",
       impact: "Potential to enhance driver preparedness and safety"
     },
     {
       company: "Instagram",
       icon: <Lightbulb className="w-6 h-6 text-pink-500" />,
-      idea: "Let users optionally disable infinite scroll to promote mindful usage and improve mental well-being.",
+      idea: "Option to disable infinite scrolling, promoting mindful usage without hurting discovery.",
       impact: "Could improve mental health and mindful content consumption"
     },
     {
       company: "Spotify",
       icon: <Laptop className="w-6 h-6 text-green-500" />,
-      idea: "Enable cross-ecosystem sync between HomePod, Alexa, and Google Home for seamless playback.",
+      idea: "Native compatibility with Apple HomePod to reduce 3-second playback delay.",
       impact: "Potential for unified smart home audio experience"
     },
     {
-      company: "Apple Home",
+      company: "Apple HomePod",
       icon: <Code2 className="w-6 h-6 text-gray-800" />,
-      idea: "Broaden HomeKit compatibility to support affordable IoT devices; reduce ecosystem lock-in.",
+      idea: "Open API for cross-brand smart-home integrations.",
       impact: "Could make smart home solutions more accessible"
     },
     {
       company: "Streaming Platforms",
       icon: <Rocket className="w-6 h-6 text-purple-500" />,
-      idea: "Collaborate on a student multi-platform plan with viewing limits, offering affordability without revenue loss.",
+      idea: "Unified Student Plan ($5/month, up to 5 shows, single device login).",
       impact: "Could make entertainment more accessible for students"
     },
     {
       company: "Notion",
       icon: <Target className="w-6 h-6 text-indigo-500" />,
-      idea: "Add native A/B testing for product teams using Notion docs, integrating analytics for content experiments.",
+      idea: "'Learning Mode' for students, tracking study streaks & recommending productivity playlists.",
       impact: "Could enable data-driven content optimization"
     },
     {
-      company: "Uber/Lyft",
+      company: "YouTube Shorts",
       icon: <Users className="w-6 h-6 text-yellow-500" />,
-      idea: "Introduce 'quiet reroute suggestions' based on real-time traffic stress detection.",
+      idea: "'Intention Tag' feature prompting users to set a viewing goal (entertainment / learning / break).",
       impact: "Could reduce travel stress and improve route planning"
     },
     {
-      company: "ChatGPT/Gemini",
+      company: "Duolingo",
       icon: <Lightbulb className="w-6 h-6 text-orange-500" />,
-      idea: "Offer a 'transparency toggle' showing prompt breakdowns, context retention, and token logic to help users understand AI reasoning.",
+      idea: "Add 'Conversational Context' challenges using AI voice chat for real-time practice.",
       impact: "Could improve AI transparency and user understanding"
     }
   ];
@@ -208,17 +208,18 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
           </motion.div>
           
           <h1 className="heading-primary mb-6">
-            I Build Products That Connect
-            <span className="block mt-2">Tech, Design, and Impact</span>
+            Hi, I'm Snehal 👋
+            <span className="block mt-2">Product Manager | UX Thinker | Builder at Heart</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
-            Product Manager | UX Thinker | Data-Driven Storyteller
+          <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+            I'm passionate about designing data-driven, scalable products that solve real-world problems and delight users.
+            Currently helping shape literacy learning experiences at <strong>Edsoma</strong>, where I've led launches improving engagement and time-on-app metrics for thousands of students.
           </p>
-          <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-            I'm Snehal Bondre — a Product Manager with 2+ years of experience turning complex ideas into meaningful products. 
-            From improving reading engagement at Edsoma to mentoring founders at NYU Stern, my goal is simple: 
-            build products that make people feel empowered, not overwhelmed.
-          </p>
+          <div className="text-sm text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="mb-2">🚀 Previously: NYU Virtual Tech Hub | Camp K12 | BME-Street Care</p>
+            <p className="mb-2">🎓 MS in Management of Technology, NYU Tandon</p>
+            <p>🧠 Interests: EdTech, AI x UX, Product Analytics, and Growth Strategy</p>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
@@ -272,17 +273,14 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
           <h3 className="text-3xl font-bold mb-6">About Me</h3>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              I started my journey at the intersection of technology and human behavior. With a Master's in Management of Technology, 
-              I learned to bridge the gap between engineering and business — translating user needs into scalable, data-driven products.
+              I love connecting the dots between user insights, data, and design.
+              My journey started with building small prototypes during grad school, and it's grown into managing real-world digital products used by learners and educators every day.
             </p>
             <p>
-              At Edsoma, I led initiatives that transformed how teachers track reading progress in real time. I've also mentored 
-              early-stage founders at NYU Stern, contributed to social-impact projects like BrightMind and StreetCare, and led 
-              hardware/software projects at IIT Bombay and RAIT.
+              At Edsoma, I lead initiatives that enhance reading engagement and teacher visibility. Before that, I helped NYU launch a virtual tech hub that supported 200+ students and faculty.
             </p>
             <p>
-              I thrive on creating products that solve real problems and bring positive change, blending data insights, user empathy, 
-              and design thinking to deliver meaningful experiences.
+              Beyond work, I mentor graduate students at NYU Business School, collaborate on UX and AI side projects, and explore creative storytelling through design and content.
             </p>
           </div>
         </motion.div>
@@ -297,10 +295,9 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
           className="max-w-6xl mx-auto"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">🧠 Product Thinking Playground (2025 Edition)</h3>
+            <h3 className="text-3xl font-bold mb-4">🧩 Product Thinking Playground (Updated 2025 Edition)</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              These are ongoing thought experiments on how everyday products could evolve with better UX, 
-              data ethics, and AI integration. Each idea reflects my approach to product innovation:
+              I often think about how everyday products could evolve, not as criticism, but as curiosity about what's possible next.
             </p>
           </div>
 
@@ -354,9 +351,10 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
         <div className="max-w-6xl mx-auto px-6 text-center">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400">sb7867@nyu.edu</p>
-              <p className="text-gray-400">(646) 417-0553</p>
+              <h4 className="font-semibold mb-4">Let's Build Something Meaningful Together ✨</h4>
+              <p className="text-gray-400">📧 snehal.bondre@gmail.com</p>
+              <p className="text-gray-400">🔗 LinkedIn: linkedin.com/in/snehalbondre</p>
+              <p className="text-gray-400">🧾 Resume: [Add resume link here]</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>

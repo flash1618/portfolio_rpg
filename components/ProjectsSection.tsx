@@ -39,35 +39,35 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    id: 'rpg-portfolio',
-    title: 'Interactive RPG Portfolio (Meta-Project)',
-    description: 'Built this gamified portfolio to explore user engagement patterns and test dual-mode UX design for professional presentation.',
-    problem: 'Traditional portfolios are static and do not demonstrate product thinking or user engagement skills to potential employers.',
-    solution: 'Created a hybrid portfolio with professional default mode and interactive RPG mode to showcase both technical skills and product thinking.',
-    techStack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React Hooks'],
-    metrics: [
-      { label: 'Time on Page', value: '4.2x longer', icon: 'Clock' },
-      { label: 'RPG Mode Usage', value: '23% of visitors', icon: 'Target' },
-      { label: 'Mobile Engagement', value: '68% mobile users', icon: 'Smartphone' },
-      { label: 'Bounce Rate', value: '45% reduction', icon: 'BarChart3' }
-    ],
-    challenges: [
-      'Balancing professional credibility with creative expression',
-      'Implementing smooth mode transitions without performance impact',
-      'Designing intuitive navigation for dual-mode experience'
-    ],
-    learnings: [
-      'User engagement patterns in professional contexts',
-      'A/B testing methodologies for portfolio optimization',
-      'Technical implementation of gamification in professional settings'
-    ],
-    links: [
-      { type: 'github', url: 'https://github.com/flash1618/portfolio_rpg', label: 'View Source' },
-      { type: 'demo', url: 'https://snehal-portfolio.vercel.app', label: 'Live Portfolio' }
-    ],
-    status: 'in-progress'
-  },
+    {
+      id: 'rpg-portfolio',
+      title: 'RPG Portfolio (Ongoing)',
+      description: 'Designed a gamified portfolio experience integrating React, Tailwind, and Framer Motion.',
+      problem: 'Traditional portfolios are static and do not demonstrate product thinking or user engagement skills to potential employers.',
+      solution: 'Created a hybrid portfolio with professional default mode and interactive RPG mode to showcase both technical skills and product thinking.',
+      techStack: ['React', 'Tailwind', 'Framer Motion', 'Next.js', 'TypeScript'],
+      metrics: [
+        { label: 'Time on Page', value: '4.2x longer', icon: 'Clock' },
+        { label: 'RPG Mode Usage', value: '23% of visitors', icon: 'Target' },
+        { label: 'Mobile Engagement', value: '68% mobile users', icon: 'Smartphone' },
+        { label: 'Bounce Rate', value: '45% reduction', icon: 'BarChart3' }
+      ],
+      challenges: [
+        'Balancing professional credibility with creative expression',
+        'Implementing smooth mode transitions without performance impact',
+        'Designing intuitive navigation for dual-mode experience'
+      ],
+      learnings: [
+        'User engagement patterns in professional contexts',
+        'A/B testing methodologies for portfolio optimization',
+        'Technical implementation of gamification in professional settings'
+      ],
+      links: [
+        { type: 'github', url: 'https://github.com/flash1618/portfolio_rpg', label: 'View Source' },
+        { type: 'demo', url: 'https://snehal-portfolio.vercel.app', label: 'Live Portfolio' }
+      ],
+      status: 'in-progress'
+    },
   {
     id: 'inflation-forex-analysis',
     title: 'Inflation Affecting Forex Analysis',
@@ -99,64 +99,64 @@ const projects: Project[] = [
     ],
     status: 'completed'
   },
-  {
-    id: 'ai-wrapper-tool',
-    title: 'AI API Wrapper & Integration Tool',
-    description: 'Built a Python Flask API wrapper to streamline AI model integration for development teams, reducing integration time and improving error handling.',
-    problem: 'Development teams were spending 2-3 days integrating AI models with inconsistent error handling and no standardized response formats.',
-    solution: 'Created a unified Flask API wrapper with standardized endpoints, automatic retry logic, and comprehensive error handling for multiple AI providers.',
-    techStack: ['Python', 'Flask', 'React', 'PostgreSQL', 'Docker', 'Redis'],
-    metrics: [
-      { label: 'Integration Time', value: '75% reduction', icon: 'Clock' },
-      { label: 'API Response Time', value: '~200ms avg', icon: 'Zap' },
-      { label: 'Error Rate', value: '95% reduction', icon: 'Target' },
-      { label: 'Developer Adoption', value: '12+ teams', icon: 'Users' }
-    ],
-    challenges: [
-      'Managing rate limits across different AI providers',
-      'Implementing robust error handling for network failures',
-      'Creating consistent response formats for varied model outputs'
-    ],
-    learnings: [
-      'API design patterns for microservices architecture',
-      'Error handling strategies for external service dependencies',
-      'Performance optimization techniques for high-throughput APIs'
-    ],
-    links: [
-      { type: 'github', url: 'https://github.com/flash1618/ai-wrapper', label: 'View Code' },
-      { type: 'demo', url: 'https://ai-wrapper-demo.vercel.app', label: 'Live Demo' }
-    ],
-    status: 'completed'
-  },
-  {
-    id: 'law-firm-website',
-    title: 'Law Firm Website & Client Portal',
-    description: 'Designed and developed a modern, SEO-optimized website for a law firm with integrated client portal and lead generation system.',
-    problem: 'Law firm needed a professional web presence to attract clients and streamline case management, but existing site was outdated and not mobile-responsive.',
-    solution: 'Built a modern React website with TypeScript, integrated contact forms, SEO optimization, and responsive design for all devices.',
-    techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Web3Forms', 'Vercel'],
-    metrics: [
-      { label: 'Page Load Speed', value: '2.1s → 0.8s (62% faster)', icon: 'Zap' },
-      { label: 'Mobile Traffic', value: '+180% increase', icon: 'Smartphone' },
-      { label: 'Lead Generation', value: '+250% more inquiries', icon: 'Users' },
-      { label: 'SEO Score', value: '95/100', icon: 'Search' }
-    ],
-    challenges: [
-      'Optimizing image loading for legal document previews',
-      'Implementing secure contact forms with spam protection',
-      'Ensuring accessibility compliance for legal industry standards'
-    ],
-    learnings: [
-      'SEO optimization techniques for service-based businesses',
-      'Performance optimization for image-heavy content',
-      'Legal compliance considerations for client data handling'
-    ],
-    links: [
-      { type: 'demo', url: 'https://law-firm-demo.vercel.app', label: 'View Website' },
-      { type: 'case-study', url: '/case-studies/law-firm', label: 'Read Case Study' }
-    ],
-    status: 'completed'
-  },
+    {
+      id: 'ai-wrapper-tool',
+      title: 'AI API Wrapper (2024)',
+      description: 'Built an AI prompt orchestration tool integrating OpenAI + HuggingFace APIs.',
+      problem: 'Development teams were spending 2-3 days integrating AI models with inconsistent error handling and no standardized response formats.',
+      solution: 'Created a unified Flask API wrapper with standardized endpoints, automatic retry logic, and comprehensive error handling for multiple AI providers.',
+      techStack: ['Python', 'Flask', 'OpenAI API', 'HuggingFace', 'Streamlit', 'Redis'],
+      metrics: [
+        { label: 'API Latency', value: '<250ms per request', icon: 'Zap' },
+        { label: 'Integration Time', value: '75% reduction', icon: 'Clock' },
+        { label: 'Error Rate', value: '95% reduction', icon: 'Target' },
+        { label: 'Developer Adoption', value: '12+ teams', icon: 'Users' }
+      ],
+      challenges: [
+        'Managing rate limits across different AI providers',
+        'Implementing robust error handling for network failures',
+        'Creating consistent response formats for varied model outputs'
+      ],
+      learnings: [
+        'API design patterns for microservices architecture',
+        'Error handling strategies for external service dependencies',
+        'Performance optimization techniques for high-throughput APIs'
+      ],
+      links: [
+        { type: 'github', url: 'https://github.com/flash1618/ai-wrapper', label: 'View Code' },
+        { type: 'demo', url: 'https://ai-wrapper-demo.vercel.app', label: 'Live Demo' }
+      ],
+      status: 'completed'
+    },
+    {
+      id: 'law-firm-website',
+      title: 'Law Firm Website (2024)',
+      description: 'Designed & developed a responsive site for a legal consultancy using Next.js + TailwindCSS + Formspree.',
+      problem: 'Law firm needed a professional web presence to attract clients and streamline case management, but existing site was outdated and not mobile-responsive.',
+      solution: 'Built a modern React website with TypeScript, integrated contact forms, SEO optimization, and responsive design for all devices.',
+      techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Formspree', 'Vercel'],
+      metrics: [
+        { label: 'Lead Conversions', value: '+35% improvement', icon: 'Users' },
+        { label: 'Page Load Speed', value: '2.1s → 0.8s (62% faster)', icon: 'Zap' },
+        { label: 'Mobile Traffic', value: '+180% increase', icon: 'Smartphone' },
+        { label: 'Lighthouse Score', value: '96+', icon: 'Search' }
+      ],
+      challenges: [
+        'Optimizing image loading for legal document previews',
+        'Implementing secure contact forms with spam protection',
+        'Ensuring accessibility compliance for legal industry standards'
+      ],
+      learnings: [
+        'SEO optimization techniques for service-based businesses',
+        'Performance optimization for image-heavy content',
+        'Legal compliance considerations for client data handling'
+      ],
+      links: [
+        { type: 'demo', url: 'https://law-firm-demo.vercel.app', label: 'View Website' },
+        { type: 'case-study', url: '/case-studies/law-firm', label: 'Read Case Study' }
+      ],
+      status: 'completed'
+    },
   {
     id: 'smart-dustbin-iot',
     title: 'Smart Dustbin IoT System',

@@ -40,32 +40,32 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
-  {
-    id: 'edsoma-pm',
-    title: 'Product Manager',
-    company: 'Edsoma',
-    location: 'Remote',
-    duration: 'May 2023 – Present',
-    type: 'work',
-    description: 'Leading AI-based reading app development with focus on teacher engagement and student progress tracking.',
-    achievements: [
-      'Led AI-based reading app with 15% engagement growth and 304% download increase',
-      'Launched Teacher Dashboard website, onboarding 60,000+ users',
-      'Optimized product via post-launch analytics and user feedback',
-      'Translated business needs into Jira user stories, boosting sprint velocity by 6%'
-    ],
-    techStack: ['React', 'Node.js', 'AI/ML', 'Analytics', 'Jira', 'Agile'],
-    metrics: [
-      { label: 'User Growth', value: '304%', icon: 'TrendingUp' },
-      { label: 'Engagement', value: '+15%', icon: 'Target' },
-      { label: 'Users Onboarded', value: '60,000+', icon: 'Users' },
-      { label: 'Sprint Velocity', value: '+6%', icon: 'Zap' }
-    ],
-    image: '/images/edsoma-dashboard.jpg',
-    links: [
-      { type: 'website', url: 'https://edsoma.com', label: 'View Product' }
-    ]
-  },
+    {
+      id: 'edsoma-pm',
+      title: 'Product Manager',
+      company: 'Edsoma (EdTech Startup)',
+      location: 'Remote',
+      duration: 'Jan 2023 – Present',
+      type: 'work',
+      description: 'Own end-to-end product development for reading-assessment features used by 10K+ students and 500+ teachers.',
+      achievements: [
+        'Partner with engineers & speech-tech teams to build a phonetic similarity module, improving word-level scoring accuracy by 25%',
+        'Defined success metrics, set up dashboards in Metabase, and implemented OKRs to track engagement and reading progress',
+        'Delivered "Continue Reading" flow, reducing assessment drop-offs by 18%',
+        'Collaborate with cross-functional teams to drive reliability, scalability, and performance improvements'
+      ],
+      techStack: ['React', 'Node.js', 'AI/ML', 'Metabase', 'Jira', 'Agile'],
+      metrics: [
+        { label: 'Students Served', value: '10K+', icon: 'Users' },
+        { label: 'Teachers', value: '500+', icon: 'Target' },
+        { label: 'Scoring Accuracy', value: '+25%', icon: 'TrendingUp' },
+        { label: 'Drop-off Reduction', value: '18%', icon: 'Zap' }
+      ],
+      image: '/images/edsoma-dashboard.jpg',
+      links: [
+        { type: 'website', url: 'https://edsoma.com', label: 'View Product' }
+      ]
+    },
   {
     id: 'brightmind-pm',
     title: 'Product Manager',
@@ -110,28 +110,28 @@ const experiences: Experience[] = [
     ],
     image: '/images/nyu-lms.jpg'
   },
-  {
-    id: 'nyu-capstone',
-    title: 'Product Manager - Virtual Technology Hub',
-    company: 'NYU Tandon',
-    location: 'New York, NY',
-    duration: 'Jun 2022 – Dec 2022',
-    type: 'capstone',
-    description: 'Led capstone project developing virtual technology hub with comprehensive user research and data analytics.',
-    achievements: [
-      'Conducted 80+ interviews & surveys for user research',
-      'Launched WordPress website for 200+ users',
-      'Built SQL/Tableau dashboards, reducing manual reporting by 7 hours/week',
-      'Implemented data-driven decision making processes'
-    ],
-    techStack: ['WordPress', 'SQL', 'Tableau', 'User Research', 'Data Analytics'],
-    metrics: [
-      { label: 'User Research', value: '80+ interviews', icon: 'Users' },
-      { label: 'Time Saved', value: '7 hours/week', icon: 'Zap' },
-      { label: 'Users Served', value: '200+', icon: 'Target' }
-    ],
-    image: '/images/nyu-capstone.jpg'
-  },
+    {
+      id: 'nyu-capstone',
+      title: 'Product Manager (Capstone Project)',
+      company: 'NYU Virtual Tech Hub',
+      location: 'New York, NY',
+      duration: 'Jun 2022 – Dec 2022',
+      type: 'capstone',
+      description: 'Conducted 80+ user interviews & surveys to identify collaboration pain points.',
+      achievements: [
+        'Launched a WordPress-based internal portal serving 200+ students & faculty',
+        'Built SQL + Tableau dashboards to automate reporting, saving 7 hours/week of manual effort',
+        'Delivered an MVP that was later adopted by other NYU departments',
+        'Conducted comprehensive user research to identify collaboration pain points'
+      ],
+      techStack: ['WordPress', 'SQL', 'Tableau', 'User Research', 'Data Analytics'],
+      metrics: [
+        { label: 'User Research', value: '80+ interviews', icon: 'Users' },
+        { label: 'Time Saved', value: '7 hours/week', icon: 'Zap' },
+        { label: 'Users Served', value: '200+', icon: 'Target' }
+      ],
+      image: '/images/nyu-capstone.jpg'
+    },
   {
     id: 'broccolipizza-founder',
     title: 'Founder',
@@ -157,28 +157,28 @@ const experiences: Experience[] = [
       { type: 'github', url: 'https://github.com/flash1618/broccolipizza', label: 'View Code' }
     ]
   },
-  {
-    id: 'campk12-intern',
-    title: 'Technical Assistant (Product Team Intern)',
-    company: 'CampK-12',
-    location: 'Remote',
-    duration: 'Jul 2018 – Sep 2018',
-    type: 'work',
-    description: 'Developed interactive coding games and educational tools for K-12 students.',
-    achievements: [
-      'Developed interactive coding games using MIT App Inventor',
-      'Reduced student learning time by 50%',
-      'Created engaging educational content',
-      'Collaborated with product team on user experience'
-    ],
-    techStack: ['MIT App Inventor', 'Educational Technology', 'Game Development'],
-    metrics: [
-      { label: 'Learning Time', value: '-50%', icon: 'Zap' },
-      { label: 'Student Impact', value: 'High', icon: 'Users' },
-      { label: 'Engagement', value: 'Improved', icon: 'Target' }
-    ],
-    image: '/images/campk12-games.jpg'
-  }
+    {
+      id: 'campk12-intern',
+      title: 'Product Intern',
+      company: 'Camp K12 (EdTech)',
+      location: 'Remote',
+      duration: 'Jun 2021 – Sep 2021',
+      type: 'work',
+      description: 'Collaborated with the product team to design & test new student engagement features in the coding app.',
+      achievements: [
+        'Streamlined QA testing workflow, reducing bug-resolution cycle by 30%',
+        'Conducted competitive benchmarking to identify product gaps across peer EdTech apps',
+        'Collaborated with the product team to design & test new student engagement features',
+        'Developed interactive coding games using MIT App Inventor'
+      ],
+      techStack: ['MIT App Inventor', 'Educational Technology', 'QA Testing', 'Competitive Analysis'],
+      metrics: [
+        { label: 'Bug Resolution', value: '30% faster', icon: 'Zap' },
+        { label: 'Student Impact', value: 'High', icon: 'Users' },
+        { label: 'Engagement', value: 'Improved', icon: 'Target' }
+      ],
+      image: '/images/campk12-games.jpg'
+    }
 ];
 
 export default function ExperienceSection() {

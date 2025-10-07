@@ -25,17 +25,17 @@ interface Achievement {
   category: 'award' | 'leadership' | 'innovation' | 'social-impact';
 }
 
-const achievements: Achievement[] = [
-  {
-    id: 'nyu-stern-mentor',
-    title: 'Hackathon Mentor',
-    organization: 'NYU Stern',
-    year: '2022',
-    description: 'Guided student teams to design sustainability-focused hardware solutions during hackathon events.',
-    impact: 'Mentored 20+ students in developing innovative sustainability solutions',
-    icon: 'Globe',
-    category: 'social-impact'
-  },
+  const achievements: Achievement[] = [
+    {
+      id: 'nyu-stern-mentor',
+      title: 'Mentor',
+      organization: 'NYU Stern Business School',
+      year: '2023–Present',
+      description: 'Guiding early-career professionals exploring product management.',
+      impact: 'Mentored 20+ students in developing innovative sustainability solutions',
+      icon: 'Globe',
+      category: 'social-impact'
+    },
   {
     id: 'iit-best-demonstration',
     title: 'Best Demonstration Award',
@@ -46,16 +46,16 @@ const achievements: Achievement[] = [
     icon: 'Trophy',
     category: 'award'
   },
-  {
-    id: 'entrepreneurship-club-founder',
-    title: 'Entrepreneurship Club Founder',
-    organization: 'RAIT',
-    year: '2018-2020',
-    description: 'Founded a club to help students take projects from ideation to implementation by connecting them with business leaders.',
-    impact: 'Empowered 50+ students to transform ideas into viable business projects',
-    icon: 'Lightbulb',
-    category: 'leadership'
-  },
+    {
+      id: 'entrepreneurship-club-founder',
+      title: 'Project Lead',
+      organization: 'Digital Media Innovation Program – IIT Bombay',
+      year: '2022',
+      description: 'Collaborated on tech solutions for media outreach.',
+      impact: 'Empowered 50+ students to transform ideas into viable business projects',
+      icon: 'Lightbulb',
+      category: 'leadership'
+    },
   {
     id: 'ieee-marketing-manager',
     title: 'Marketing Manager',
@@ -66,26 +66,26 @@ const achievements: Achievement[] = [
     icon: 'TrendingUp',
     category: 'leadership'
   },
-  {
-    id: 'women-empowering-women',
-    title: 'Event Organizer - Women Empowering Women',
-    organization: 'IEEE GRSS & Robotics Workshops',
-    year: '2018',
-    description: 'Organized "Women Empowering Women" event along with Forklift Robotics, Circuit Designing, Arduino & Raspberry Pi workshops.',
-    impact: 'Promoted diversity and inclusion in tech, reaching 200+ participants',
-    icon: 'Users',
-    category: 'social-impact'
-  },
-  {
-    id: 'best-event-whizion',
-    title: 'Best Event Award',
-    organization: 'Whizion IEEE RAIT',
-    year: '2018',
-    description: 'Acted as Event Head, achieving the "Best Event" award for outstanding event organization and execution.',
-    impact: 'Set new standards for event quality and student engagement',
-    icon: 'Award',
-    category: 'award'
-  },
+    {
+      id: 'women-empowering-women',
+      title: 'Winner',
+      organization: 'NYU Product Strategy Sprint',
+      year: '2022',
+      description: 'Won NYU Product Strategy Sprint competition.',
+      impact: 'Promoted diversity and inclusion in tech, reaching 200+ participants',
+      icon: 'Users',
+      category: 'social-impact'
+    },
+    {
+      id: 'best-event-whizion',
+      title: 'Volunteer',
+      organization: 'BME-Street Care',
+      year: '2022',
+      description: 'Supported logistics & digital visibility initiatives for homeless outreach.',
+      impact: 'Set new standards for event quality and student engagement',
+      icon: 'Award',
+      category: 'award'
+    },
 ];
 
 export default function LeadershipSection() {
