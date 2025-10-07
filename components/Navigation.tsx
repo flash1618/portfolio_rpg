@@ -46,7 +46,7 @@ export default function Navigation({ activeSection, onSectionChange, isRPGMode =
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="hidden md:flex fixed top-0 left-0 right-0 z-40 bg-game-bg/90 backdrop-blur-sm border-b border-game-border"
+        className="hidden md:flex fixed top-0 left-0 right-0 z-40 sticky-nav"
       >
         <div className="max-w-7xl mx-auto w-full px-6 py-4">
           <div className="flex items-center justify-between">
@@ -131,7 +131,7 @@ export default function Navigation({ activeSection, onSectionChange, isRPGMode =
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="md:hidden fixed top-0 left-0 right-0 z-40 bg-game-bg/90 backdrop-blur-sm border-b border-game-border"
+        className="md:hidden fixed top-0 left-0 right-0 z-40 sticky-nav"
       >
         <div className="px-4 py-4">
           <div className="flex items-center justify-between">

@@ -24,6 +24,8 @@ import TechnicalSkills from './TechnicalSkills';
 import ExperienceSection from './ExperienceSection';
 import LeadershipSection from './LeadershipSection';
 import StickyContact from './StickyContact';
+import TestimonialsSection from './TestimonialsSection';
+import BackToTop from './BackToTop';
 
 interface Analytics {
   visitorCount: number;
@@ -143,33 +145,49 @@ export default function ProfessionalLayout() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-6 md:px-12 py-16 text-center">
+      <section className="px-6 md:px-12 py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 left-20 w-32 h-32 bg-blue-600 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-purple-600 rounded-full blur-3xl"></div>
+        </div>
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-4xl mx-auto text-center relative z-10"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-8"
+          >
+            <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl">
+              <span className="text-white font-bold text-2xl">SB</span>
+            </div>
+          </motion.div>
+          
+          <h1 className="heading-primary mb-6">
             I Build Products That Connect
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Tech, Design, and Impact
-            </span>
+            <span className="block mt-2">Tech, Design, and Impact</span>
           </h2>
-          <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
             Product Manager | UX Thinker | Data-Driven Storyteller
           </p>
-          <p className="text-lg text-gray-500 mb-8 max-w-4xl mx-auto">
+          <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
             I'm Snehal Bondre — a Product Manager with 2+ years of experience turning complex ideas into meaningful products. 
             From improving reading engagement at Edsoma to mentoring founders at NYU Stern, my goal is simple: 
             build products that make people feel empowered, not overwhelmed.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
               href="mailto:sb7867@nyu.edu"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center space-x-2"
+              className="btn-primary flex items-center space-x-2"
             >
               <Mail className="w-5 h-5" />
               <span>Contact Me</span>
@@ -180,7 +198,7 @@ export default function ProfessionalLayout() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center space-x-2"
+              className="btn-secondary flex items-center space-x-2"
             >
               <ExternalLink className="w-5 h-5" />
               <span>LinkedIn</span>
@@ -284,6 +302,9 @@ export default function ProfessionalLayout() {
       {/* Technical Skills */}
       <TechnicalSkills />
 
+      {/* Testimonials */}
+      <TestimonialsSection />
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-6 text-center">
@@ -312,6 +333,9 @@ export default function ProfessionalLayout() {
           </div>
         </div>
       </footer>
+
+      {/* Back to Top Button */}
+      <BackToTop />
     </div>
   );
 }
