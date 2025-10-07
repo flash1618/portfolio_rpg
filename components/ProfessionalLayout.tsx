@@ -21,6 +21,8 @@ import {
 } from 'lucide-react';
 import ProjectsSection from './ProjectsSection';
 import TechnicalSkills from './TechnicalSkills';
+import ExperienceSection from './ExperienceSection';
+import LeadershipSection from './LeadershipSection';
 import StickyContact from './StickyContact';
 
 interface Analytics {
@@ -46,38 +48,56 @@ export default function ProfessionalLayout() {
     {
       company: "LinkedIn",
       icon: <Briefcase className="w-6 h-6 text-blue-600" />,
-      idea: "Add a filter to show companies that sponsor H1B visas — saving time for both recruiters and applicants.",
-      impact: "Potential time savings for international job seekers"
+      idea: "Add an H-1B sponsorship filter to streamline job search for international candidates and recruiters.",
+      impact: "Streamlined recruitment process for global talent"
     },
     {
       company: "Google Maps",
       icon: <Rocket className="w-6 h-6 text-green-600" />,
-      idea: "Indicate upcoming traffic signals and elevation changes for safer, more predictable driving experiences.",
+      idea: "Introduce a 'smart signal awareness' feature using AI to detect upcoming red lights and elevation changes.",
       impact: "Enhanced driver preparedness and safety"
     },
     {
       company: "Instagram",
       icon: <Lightbulb className="w-6 h-6 text-pink-500" />,
-      idea: "Give users an option to disable infinite scroll for Reels. Supports mindful content consumption and better UX metrics.",
-      impact: "Improved user control and content consumption patterns"
+      idea: "Let users optionally disable infinite scroll to promote mindful usage and improve mental well-being.",
+      impact: "Better mental health and mindful content consumption"
     },
     {
       company: "Spotify",
       icon: <Laptop className="w-6 h-6 text-green-500" />,
-      idea: "Reduce 3s lag when streaming on Apple HomePod by optimizing AirPlay buffer or offering direct WiFi pairing.",
-      impact: "Seamless audio experience across devices"
+      idea: "Enable cross-ecosystem sync between HomePod, Alexa, and Google Home for seamless playback.",
+      impact: "Unified smart home audio experience"
     },
     {
-      company: "Apple",
+      company: "Apple Home",
       icon: <Code2 className="w-6 h-6 text-gray-800" />,
-      idea: "Expand HomePod compatibility to third-party smart devices, like Alexa's ecosystem, for better user choice and adoption.",
-      impact: "Increased smart home ecosystem flexibility"
+      idea: "Broaden HomeKit compatibility to support affordable IoT devices; reduce ecosystem lock-in.",
+      impact: "More accessible smart home solutions"
     },
     {
       company: "Streaming Platforms",
       icon: <Rocket className="w-6 h-6 text-purple-500" />,
-      idea: "Collaborate to offer a unified student plan (~$5/mo) allowing limited cross-platform viewing to boost engagement and loyalty.",
-      impact: "More accessible entertainment for students"
+      idea: "Collaborate on a student multi-platform plan with viewing limits, offering affordability without revenue loss.",
+      impact: "Accessible entertainment for students"
+    },
+    {
+      company: "Notion",
+      icon: <Target className="w-6 h-6 text-indigo-500" />,
+      idea: "Add native A/B testing for product teams using Notion docs, integrating analytics for content experiments.",
+      impact: "Data-driven content optimization"
+    },
+    {
+      company: "Uber/Lyft",
+      icon: <Users className="w-6 h-6 text-yellow-500" />,
+      idea: "Introduce 'quiet reroute suggestions' based on real-time traffic stress detection.",
+      impact: "Reduced travel stress and better route planning"
+    },
+    {
+      company: "ChatGPT/Gemini",
+      icon: <Lightbulb className="w-6 h-6 text-orange-500" />,
+      idea: "Offer a 'transparency toggle' showing prompt breakdowns, context retention, and token logic to help users understand AI reasoning.",
+      impact: "Improved AI transparency and user understanding"
     }
   ];
 
@@ -130,14 +150,18 @@ export default function ProfessionalLayout() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            I Build Meaningful Products That Connect
+            I Build Products That Connect
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Tech, Design, and Impact
             </span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Product Manager at Edsoma Reads | M.S. Management of Technology, NYU | 
-            Passionate about solving real-world problems through innovative product strategies
+          <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+            Product Manager | UX Thinker | Data-Driven Storyteller
+          </p>
+          <p className="text-lg text-gray-500 mb-8 max-w-4xl mx-auto">
+            I'm Snehal Bondre — a Product Manager with 2+ years of experience turning complex ideas into meaningful products. 
+            From improving reading engagement at Edsoma to mentoring founders at NYU Stern, my goal is simple: 
+            build products that make people feel empowered, not overwhelmed.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -189,20 +213,20 @@ export default function ProfessionalLayout() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h3 className="text-3xl font-bold mb-6">About My Product Philosophy</h3>
+          <h3 className="text-3xl font-bold mb-6">About Me</h3>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              I believe great products emerge from understanding the human behind every data point. 
-              My approach combines technical depth with user empathy, always asking: "How does this solve a real problem?"
+              I started my journey at the intersection of technology and human behavior. With a Master's in Management of Technology, 
+              I learned to bridge the gap between engineering and business — translating user needs into scalable, data-driven products.
             </p>
             <p>
-              From building AI tools that save developers time to creating websites that generate leads, 
-              I focus on measurable impact. Every project teaches me something new about user behavior, 
-              technical constraints, and the art of shipping products that matter.
+              At Edsoma, I led initiatives that transformed how teachers track reading progress in real time. I've also mentored 
+              early-stage founders at NYU Stern, contributed to social-impact projects like BrightMind and StreetCare, and led 
+              hardware/software projects at IIT Bombay and RAIT.
             </p>
             <p>
-              This portfolio itself is an experiment in engagement design — testing how different presentation 
-              modes affect user behavior and demonstrating my commitment to data-driven product decisions.
+              I thrive on creating products that solve real problems and bring positive change, blending data insights, user empathy, 
+              and design thinking to deliver meaningful experiences.
             </p>
           </div>
         </motion.div>
@@ -217,10 +241,10 @@ export default function ProfessionalLayout() {
           className="max-w-6xl mx-auto"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">🧠 Product Thinking Playground</h3>
+            <h3 className="text-3xl font-bold mb-4">🧠 Product Thinking Playground (2025 Edition)</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              I analyze everyday products and find ways to make them smarter, faster, and more human-centered. 
-              These are idea explorations that reflect my PM mindset and problem-solving approach:
+              These are ongoing thought experiments on how everyday products could evolve with better UX, 
+              data ethics, and AI integration. Each idea reflects my approach to product innovation:
             </p>
           </div>
 
@@ -248,46 +272,11 @@ export default function ProfessionalLayout() {
         </motion.div>
       </section>
 
-      {/* Experience Timeline */}
-      <section className="px-6 md:px-12 py-16 bg-gray-50">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
-        >
-          <h3 className="text-3xl font-bold text-center mb-12">Professional Journey</h3>
-          
-          <div className="space-y-8">
-            <div className="flex items-start space-x-4">
-              <div className="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
-              <div className="flex-1">
-                <h4 className="text-xl font-semibold">Product Manager</h4>
-                <p className="text-gray-600">Edsoma Reads • 2+ years</p>
-                <p className="text-gray-700 mt-2">Leading product strategy at an Ed-tech startup, transforming education through innovative products that empower both learners and educators.</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-              <div className="flex-1">
-                <h4 className="text-xl font-semibold">LMS Consultant</h4>
-                <p className="text-gray-600">NYU • 1 year</p>
-                <p className="text-gray-700 mt-2">Enhanced learning management systems, improving user experience and adoption rates while maintaining high academic standards.</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="w-3 h-3 bg-purple-600 rounded-full mt-2"></div>
-              <div className="flex-1">
-                <h4 className="text-xl font-semibold">Social Impact Volunteer</h4>
-                <p className="text-gray-600">BME-Street Care • 1 year</p>
-                <p className="text-gray-700 mt-2">Applied product management skills to address homelessness, making meaningful difference for vulnerable communities.</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </section>
+      {/* Experience Section */}
+      <ExperienceSection />
+
+      {/* Leadership & Achievements */}
+      <LeadershipSection />
 
       {/* Projects Section */}
       <ProjectsSection />
