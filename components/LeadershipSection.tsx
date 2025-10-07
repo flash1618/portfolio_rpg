@@ -86,26 +86,6 @@ const achievements: Achievement[] = [
     icon: 'Globe',
     category: 'social-impact'
   },
-  {
-    id: 'smart-dustbin-iot',
-    title: 'Smart Dustbin IoT System',
-    organization: 'RAIT',
-    year: '2019',
-    description: 'Developed IoT system tracking garbage levels across campus, improving waste diversion by 29% and reducing per capita waste by 13%.',
-    impact: 'Significant environmental impact through smart waste management',
-    icon: 'Target',
-    category: 'innovation'
-  },
-  {
-    id: 'inflation-forex-analysis',
-    title: 'Inflation Affecting Forex Analysis',
-    organization: 'NYU',
-    year: '2022',
-    description: 'Automated real-time Forex data extraction and analyzed effects on inflation with SQL & Tableau dashboards.',
-    impact: 'Provided data-driven insights for financial decision making',
-    icon: 'Code2',
-    category: 'innovation'
-  }
 ];
 
 export default function LeadershipSection() {

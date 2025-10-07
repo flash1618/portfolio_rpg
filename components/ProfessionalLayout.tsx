@@ -293,11 +293,11 @@ export default function ProfessionalLayout() {
       {/* Experience Section */}
       <ExperienceSection />
 
-      {/* Leadership & Achievements */}
-      <LeadershipSection />
-
       {/* Projects Section */}
       <ProjectsSection />
+
+      {/* Leadership & Achievements */}
+      <LeadershipSection />
 
       {/* Technical Skills */}
       <TechnicalSkills />

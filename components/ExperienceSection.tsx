@@ -89,28 +89,6 @@ const experiences: Experience[] = [
     image: '/images/brightmind-app.jpg'
   },
   {
-    id: 'nyu-capstone',
-    title: 'Product Manager / Capstone Project Lead',
-    company: 'NYU Tandon - Virtual Technology Hub',
-    location: 'New York, NY',
-    duration: 'Jun 2022 – Dec 2022',
-    type: 'project',
-    description: 'Led capstone project developing virtual technology hub with comprehensive user research and data analytics.',
-    achievements: [
-      'Conducted 80+ interviews & surveys for user research',
-      'Launched WordPress website for 200+ users',
-      'Built SQL/Tableau dashboards, reducing manual reporting by 7 hours/week',
-      'Implemented data-driven decision making processes'
-    ],
-    techStack: ['WordPress', 'SQL', 'Tableau', 'User Research', 'Data Analytics'],
-    metrics: [
-      { label: 'User Research', value: '80+ interviews', icon: 'Users' },
-      { label: 'Time Saved', value: '7 hours/week', icon: 'Zap' },
-      { label: 'Users Served', value: '200+', icon: 'Target' }
-    ],
-    image: '/images/nyu-capstone.jpg'
-  },
-  {
     id: 'nyu-lms',
     title: 'LMS Consultant',
     company: 'NYU IT',
@@ -131,6 +109,28 @@ const experiences: Experience[] = [
       { label: 'Satisfaction', value: 'High', icon: 'Target' }
     ],
     image: '/images/nyu-lms.jpg'
+  },
+  {
+    id: 'nyu-capstone',
+    title: 'Product Manager / Capstone Project Lead',
+    company: 'NYU Tandon - Virtual Technology Hub',
+    location: 'New York, NY',
+    duration: 'Jun 2022 – Dec 2022',
+    type: 'project',
+    description: 'Led capstone project developing virtual technology hub with comprehensive user research and data analytics.',
+    achievements: [
+      'Conducted 80+ interviews & surveys for user research',
+      'Launched WordPress website for 200+ users',
+      'Built SQL/Tableau dashboards, reducing manual reporting by 7 hours/week',
+      'Implemented data-driven decision making processes'
+    ],
+    techStack: ['WordPress', 'SQL', 'Tableau', 'User Research', 'Data Analytics'],
+    metrics: [
+      { label: 'User Research', value: '80+ interviews', icon: 'Users' },
+      { label: 'Time Saved', value: '7 hours/week', icon: 'Zap' },
+      { label: 'Users Served', value: '200+', icon: 'Target' }
+    ],
+    image: '/images/nyu-capstone.jpg'
   },
   {
     id: 'broccolipizza-founder',
@@ -178,31 +178,6 @@ const experiences: Experience[] = [
       { label: 'Engagement', value: 'Improved', icon: 'Target' }
     ],
     image: '/images/campk12-games.jpg'
-  },
-  {
-    id: 'iit-bombay-project',
-    title: 'EYIC Project - Defense Mechanism Using Image Processing',
-    company: 'IIT Bombay',
-    location: 'Mumbai, India',
-    duration: 'Sep 2018 – Apr 2019',
-    type: 'project',
-    description: 'Developed autonomous surveillance robot using image processing and SPI communication for target tracking.',
-    achievements: [
-      'Built autonomous surveillance robot using image processing',
-      'Implemented SPI communication for target tracking',
-      'Won Best Demonstration Award among 362 nationwide teams',
-      'Recognized by DRDO for technical excellence'
-    ],
-    techStack: ['Raspbian OS', 'Arduino IDE', 'Fusion 360', 'C++', 'Image Processing'],
-    metrics: [
-      { label: 'Award', value: 'Best Demonstration', icon: 'Award' },
-      { label: 'Teams Competed', value: '362', icon: 'Users' },
-      { label: 'Recognition', value: 'DRDO', icon: 'Target' }
-    ],
-    image: '/images/iit-robot.jpg',
-    links: [
-      { type: 'github', url: 'https://github.com/flash1618/defense-mechanism', label: 'View Code' }
-    ]
   }
 ];
 
