@@ -172,7 +172,7 @@ export default function ProfessionalLayout() {
           <h1 className="heading-primary mb-6">
             I Build Products That Connect
             <span className="block mt-2">Tech, Design, and Impact</span>
-          </h2>
+          </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
             Product Manager | UX Thinker | Data-Driven Storyteller
           </p>
