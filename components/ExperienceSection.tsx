@@ -22,7 +22,7 @@ interface Experience {
   company: string;
   location: string;
   duration: string;
-  type: 'work' | 'education' | 'project' | 'volunteer';
+  type: 'work' | 'education' | 'project' | 'volunteer' | 'capstone' | 'entrepreneurship';
   description: string;
   achievements: string[];
   techStack: string[];
