@@ -35,7 +35,12 @@ interface Analytics {
   rpgModeUsage: number;
 }
 
-export default function ProfessionalLayout() {
+interface ProfessionalLayoutProps {
+  isRPGMode?: boolean;
+  onToggleMode?: () => void;
+}
+
+export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: ProfessionalLayoutProps) {
   const [analytics, setAnalytics] = useState<Analytics>({
     visitorCount: 1247,
     averageTime: 3.2,
@@ -113,6 +118,31 @@ export default function ProfessionalLayout() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <StickyContact />
+      
+      {/* Professional Navigation */}
+      {onToggleMode && (
+        <nav className="sticky-nav z-30">
+          <div className="max-w-6xl mx-auto px-6 py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">SB</span>
+                </div>
+                <span className="text-xl font-bold text-gray-800">Snehal Bondre</span>
+              </div>
+              
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={onToggleMode}
+                className="btn-primary flex items-center space-x-2"
+              >
+                <span>🎮 Try RPG Mode</span>
+              </motion.button>
+            </div>
+          </div>
+        </nav>
+      )}
       
       {/* Header with Analytics */}
       <header className="flex items-center justify-between p-6 border-b border-gray-200">

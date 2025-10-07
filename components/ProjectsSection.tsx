@@ -40,6 +40,66 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'rpg-portfolio',
+    title: 'Interactive RPG Portfolio (Meta-Project)',
+    description: 'Built this gamified portfolio to explore user engagement patterns and test dual-mode UX design for professional presentation.',
+    problem: 'Traditional portfolios are static and do not demonstrate product thinking or user engagement skills to potential employers.',
+    solution: 'Created a hybrid portfolio with professional default mode and interactive RPG mode to showcase both technical skills and product thinking.',
+    techStack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React Hooks'],
+    metrics: [
+      { label: 'Time on Page', value: '4.2x longer', icon: 'Clock' },
+      { label: 'RPG Mode Usage', value: '23% of visitors', icon: 'Target' },
+      { label: 'Mobile Engagement', value: '68% mobile users', icon: 'Smartphone' },
+      { label: 'Bounce Rate', value: '45% reduction', icon: 'BarChart3' }
+    ],
+    challenges: [
+      'Balancing professional credibility with creative expression',
+      'Implementing smooth mode transitions without performance impact',
+      'Designing intuitive navigation for dual-mode experience'
+    ],
+    learnings: [
+      'User engagement patterns in professional contexts',
+      'A/B testing methodologies for portfolio optimization',
+      'Technical implementation of gamification in professional settings'
+    ],
+    links: [
+      { type: 'github', url: 'https://github.com/flash1618/portfolio_rpg', label: 'View Source' },
+      { type: 'demo', url: 'https://snehal-portfolio.vercel.app', label: 'Live Portfolio' }
+    ],
+    status: 'in-progress'
+  },
+  {
+    id: 'inflation-forex-analysis',
+    title: 'Inflation Affecting Forex Analysis',
+    description: 'Automated real-time Forex data extraction and analyzed effects on inflation with SQL & Tableau dashboards for financial decision making.',
+    problem: 'Manual analysis of Forex data and inflation correlation was time-consuming and prone to errors, limiting real-time financial insights.',
+    solution: 'Built automated data pipeline extracting real-time Forex data, processed with SQL, and visualized through Tableau dashboards for inflation correlation analysis.',
+    techStack: ['Python', 'SQL', 'Tableau', 'APIs', 'Data Visualization', 'Financial Analytics'],
+    metrics: [
+      { label: 'Data Processing', value: 'Real-time', icon: 'Zap' },
+      { label: 'Analysis Accuracy', value: '95%+', icon: 'Target' },
+      { label: 'Time Saved', value: '80% reduction', icon: 'Clock' },
+      { label: 'Dashboard Users', value: '50+ analysts', icon: 'Users' }
+    ],
+    challenges: [
+      'Handling high-frequency Forex data with varying formats',
+      'Ensuring data accuracy and consistency across multiple sources',
+      'Creating intuitive visualizations for complex financial relationships',
+      'Optimizing query performance for large datasets'
+    ],
+    learnings: [
+      'Financial data processing and analysis techniques',
+      'Real-time data pipeline architecture',
+      'Tableau dashboard design for financial analytics',
+      'SQL optimization for large-scale financial datasets'
+    ],
+    links: [
+      { type: 'github', url: 'https://github.com/flash1618/forex-inflation-analysis', label: 'View Code' },
+      { type: 'demo', url: '/dashboards/forex-analysis', label: 'View Dashboard' }
+    ],
+    status: 'completed'
+  },
+  {
     id: 'ai-wrapper-tool',
     title: 'AI API Wrapper & Integration Tool',
     description: 'Built a Python Flask API wrapper to streamline AI model integration for development teams, reducing integration time and improving error handling.',
@@ -98,66 +158,6 @@ const projects: Project[] = [
     status: 'completed'
   },
   {
-    id: 'rpg-portfolio',
-    title: 'Interactive RPG Portfolio (Meta-Project)',
-    description: 'Built this gamified portfolio to explore user engagement patterns and test dual-mode UX design for professional presentation.',
-    problem: 'Traditional portfolios are static and do not demonstrate product thinking or user engagement skills to potential employers.',
-    solution: 'Created a hybrid portfolio with professional default mode and interactive RPG mode to showcase both technical skills and product thinking.',
-    techStack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React Hooks'],
-    metrics: [
-      { label: 'Time on Page', value: '4.2x longer', icon: 'Clock' },
-      { label: 'RPG Mode Usage', value: '23% of visitors', icon: 'Target' },
-      { label: 'Mobile Engagement', value: '68% mobile users', icon: 'Smartphone' },
-      { label: 'Bounce Rate', value: '45% reduction', icon: 'BarChart3' }
-    ],
-    challenges: [
-      'Balancing professional credibility with creative expression',
-      'Implementing smooth mode transitions without performance impact',
-      'Designing intuitive navigation for dual-mode experience'
-    ],
-    learnings: [
-      'User engagement patterns in professional contexts',
-      'A/B testing methodologies for portfolio optimization',
-      'Technical implementation of gamification in professional settings'
-    ],
-    links: [
-      { type: 'github', url: 'https://github.com/flash1618/portfolio_rpg', label: 'View Source' },
-      { type: 'demo', url: 'https://snehal-portfolio.vercel.app', label: 'Live Portfolio' }
-    ],
-    status: 'in-progress'
-  },
-  {
-    id: 'eyic-defense-mechanism',
-    title: 'Defense Mechanism Using Image Processing',
-    description: 'Developed an autonomous surveillance robot using image processing and SPI communication for target tracking, winning Best Demonstration Award at IIT Bombay.',
-    problem: 'Need for autonomous surveillance systems that can detect and track targets in real-time without human intervention.',
-    solution: 'Built a Raspberry Pi-based robot with image processing capabilities, SPI communication, and autonomous navigation for target tracking.',
-    techStack: ['Raspbian OS', 'Arduino IDE', 'Fusion 360', 'C++', 'Image Processing', 'SPI Communication'],
-    metrics: [
-      { label: 'Award', value: 'Best Demonstration', icon: 'Award' },
-      { label: 'Teams Competed', value: '362 nationwide', icon: 'Users' },
-      { label: 'Recognition', value: 'DRDO', icon: 'Target' },
-      { label: 'Project Duration', value: '8 months', icon: 'Clock' }
-    ],
-    challenges: [
-      'Real-time image processing on limited hardware resources',
-      'Implementing reliable SPI communication between components',
-      'Achieving accurate target tracking in varying lighting conditions',
-      'Optimizing power consumption for autonomous operation'
-    ],
-    learnings: [
-      'Hardware-software integration in embedded systems',
-      'Image processing algorithms for computer vision',
-      'Communication protocols in IoT systems',
-      'Project management for technical competitions'
-    ],
-    links: [
-      { type: 'github', url: 'https://github.com/flash1618/defense-mechanism', label: 'View Code' },
-      { type: 'case-study', url: '/case-studies/eyic-project', label: 'Read Case Study' }
-    ],
-    status: 'completed'
-  },
-  {
     id: 'smart-dustbin-iot',
     title: 'Smart Dustbin IoT System',
     description: 'Developed an IoT system tracking garbage levels across campus using Raspberry Pi and sensors, improving waste diversion by 29% and reducing per capita waste by 13%.',
@@ -189,33 +189,33 @@ const projects: Project[] = [
     status: 'completed'
   },
   {
-    id: 'inflation-forex-analysis',
-    title: 'Inflation Affecting Forex Analysis',
-    description: 'Automated real-time Forex data extraction and analyzed effects on inflation with SQL & Tableau dashboards for financial decision making.',
-    problem: 'Manual analysis of Forex data and inflation correlation was time-consuming and prone to errors, limiting real-time financial insights.',
-    solution: 'Built automated data pipeline extracting real-time Forex data, processed with SQL, and visualized through Tableau dashboards for inflation correlation analysis.',
-    techStack: ['Python', 'SQL', 'Tableau', 'APIs', 'Data Visualization', 'Financial Analytics'],
+    id: 'eyic-defense-mechanism',
+    title: 'Defense Mechanism Using Image Processing',
+    description: 'Developed an autonomous surveillance robot using image processing and SPI communication for target tracking, winning Best Demonstration Award at IIT Bombay.',
+    problem: 'Need for autonomous surveillance systems that can detect and track targets in real-time without human intervention.',
+    solution: 'Built a Raspberry Pi-based robot with image processing capabilities, SPI communication, and autonomous navigation for target tracking.',
+    techStack: ['Raspbian OS', 'Arduino IDE', 'Fusion 360', 'C++', 'Image Processing', 'SPI Communication'],
     metrics: [
-      { label: 'Data Processing', value: 'Real-time', icon: 'Zap' },
-      { label: 'Analysis Accuracy', value: '95%+', icon: 'Target' },
-      { label: 'Time Saved', value: '80% reduction', icon: 'Clock' },
-      { label: 'Dashboard Users', value: '50+ analysts', icon: 'Users' }
+      { label: 'Award', value: 'Best Demonstration', icon: 'Award' },
+      { label: 'Teams Competed', value: '362 nationwide', icon: 'Users' },
+      { label: 'Recognition', value: 'DRDO', icon: 'Target' },
+      { label: 'Project Duration', value: '8 months', icon: 'Clock' }
     ],
     challenges: [
-      'Handling high-frequency Forex data with varying formats',
-      'Ensuring data accuracy and consistency across multiple sources',
-      'Creating intuitive visualizations for complex financial relationships',
-      'Optimizing query performance for large datasets'
+      'Real-time image processing on limited hardware resources',
+      'Implementing reliable SPI communication between components',
+      'Achieving accurate target tracking in varying lighting conditions',
+      'Optimizing power consumption for autonomous operation'
     ],
     learnings: [
-      'Financial data processing and analysis techniques',
-      'Real-time data pipeline architecture',
-      'Tableau dashboard design for financial analytics',
-      'SQL optimization for large-scale financial datasets'
+      'Hardware-software integration in embedded systems',
+      'Image processing algorithms for computer vision',
+      'Communication protocols in IoT systems',
+      'Project management for technical competitions'
     ],
     links: [
-      { type: 'github', url: 'https://github.com/flash1618/forex-inflation-analysis', label: 'View Code' },
-      { type: 'demo', url: '/dashboards/forex-analysis', label: 'View Dashboard' }
+      { type: 'github', url: 'https://github.com/flash1618/defense-mechanism', label: 'View Code' },
+      { type: 'case-study', url: '/case-studies/eyic-project', label: 'Read Case Study' }
     ],
     status: 'completed'
   }

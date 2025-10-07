@@ -112,11 +112,11 @@ const experiences: Experience[] = [
   },
   {
     id: 'nyu-capstone',
-    title: 'Product Manager / Capstone Project Lead',
-    company: 'NYU Tandon - Virtual Technology Hub',
+    title: 'Product Manager - Virtual Technology Hub',
+    company: 'NYU Tandon',
     location: 'New York, NY',
     duration: 'Jun 2022 – Dec 2022',
-    type: 'project',
+    type: 'capstone',
     description: 'Led capstone project developing virtual technology hub with comprehensive user research and data analytics.',
     achievements: [
       'Conducted 80+ interviews & surveys for user research',
@@ -134,11 +134,11 @@ const experiences: Experience[] = [
   },
   {
     id: 'broccolipizza-founder',
-    title: 'Founder / Product Manager',
+    title: 'Founder',
     company: 'Broccolipizza',
     location: 'Remote',
     duration: 'Jul 2020 – Dec 2021',
-    type: 'project',
+    type: 'entrepreneurship',
     description: 'Built and scaled recipe platform with focus on user engagement and content optimization.',
     achievements: [
       'Built recipe platform with 5k subscribers in 4 months',
@@ -188,6 +188,8 @@ export default function ExperienceSection() {
       case 'education': return 'bg-green-100 text-green-800 border-green-200';
       case 'project': return 'bg-purple-100 text-purple-800 border-purple-200';
       case 'volunteer': return 'bg-orange-100 text-orange-800 border-orange-200';
+      case 'capstone': return 'bg-indigo-100 text-indigo-800 border-indigo-200';
+      case 'entrepreneurship': return 'bg-pink-100 text-pink-800 border-pink-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };

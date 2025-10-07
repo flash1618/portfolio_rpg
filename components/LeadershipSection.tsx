@@ -27,6 +27,16 @@ interface Achievement {
 
 const achievements: Achievement[] = [
   {
+    id: 'nyu-stern-mentor',
+    title: 'Hackathon Mentor',
+    organization: 'NYU Stern',
+    year: '2022',
+    description: 'Guided student teams to design sustainability-focused hardware solutions during hackathon events.',
+    impact: 'Mentored 20+ students in developing innovative sustainability solutions',
+    icon: 'Globe',
+    category: 'social-impact'
+  },
+  {
     id: 'iit-best-demonstration',
     title: 'Best Demonstration Award',
     organization: 'IIT Bombay - e-Yantra Ideas Competition',
@@ -75,16 +85,6 @@ const achievements: Achievement[] = [
     impact: 'Set new standards for event quality and student engagement',
     icon: 'Award',
     category: 'award'
-  },
-  {
-    id: 'nyu-stern-mentor',
-    title: 'Hackathon Mentor',
-    organization: 'NYU Stern',
-    year: '2022',
-    description: 'Guided student teams to design sustainability-focused hardware solutions during hackathon events.',
-    impact: 'Mentored 20+ students in developing innovative sustainability solutions',
-    icon: 'Globe',
-    category: 'social-impact'
   },
 ];
 

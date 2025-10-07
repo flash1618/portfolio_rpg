@@ -79,7 +79,7 @@ export default function Home() {
   if (!isRPGMode) {
     return (
       <div className="min-h-screen">
-        <ProfessionalLayout />
+        <ProfessionalLayout isRPGMode={isRPGMode} onToggleMode={toggleRPGMode} />
       </div>
     );
   }
