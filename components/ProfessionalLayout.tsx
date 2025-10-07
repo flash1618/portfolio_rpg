@@ -56,63 +56,63 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
       company: "LinkedIn",
       icon: <Briefcase className="w-6 h-6 text-blue-600" />,
       idea: "Add an H-1B sponsorship filter to streamline job search for international candidates and recruiters.",
-      impact: "Streamlined recruitment process for global talent"
+      impact: "Could streamline recruitment process for global talent"
     },
     {
       company: "Google Maps",
       icon: <Rocket className="w-6 h-6 text-green-600" />,
       idea: "Introduce a 'smart signal awareness' feature using AI to detect upcoming red lights and elevation changes.",
-      impact: "Enhanced driver preparedness and safety"
+      impact: "Potential to enhance driver preparedness and safety"
     },
     {
       company: "Instagram",
       icon: <Lightbulb className="w-6 h-6 text-pink-500" />,
       idea: "Let users optionally disable infinite scroll to promote mindful usage and improve mental well-being.",
-      impact: "Better mental health and mindful content consumption"
+      impact: "Could improve mental health and mindful content consumption"
     },
     {
       company: "Spotify",
       icon: <Laptop className="w-6 h-6 text-green-500" />,
       idea: "Enable cross-ecosystem sync between HomePod, Alexa, and Google Home for seamless playback.",
-      impact: "Unified smart home audio experience"
+      impact: "Potential for unified smart home audio experience"
     },
     {
       company: "Apple Home",
       icon: <Code2 className="w-6 h-6 text-gray-800" />,
       idea: "Broaden HomeKit compatibility to support affordable IoT devices; reduce ecosystem lock-in.",
-      impact: "More accessible smart home solutions"
+      impact: "Could make smart home solutions more accessible"
     },
     {
       company: "Streaming Platforms",
       icon: <Rocket className="w-6 h-6 text-purple-500" />,
       idea: "Collaborate on a student multi-platform plan with viewing limits, offering affordability without revenue loss.",
-      impact: "Accessible entertainment for students"
+      impact: "Could make entertainment more accessible for students"
     },
     {
       company: "Notion",
       icon: <Target className="w-6 h-6 text-indigo-500" />,
       idea: "Add native A/B testing for product teams using Notion docs, integrating analytics for content experiments.",
-      impact: "Data-driven content optimization"
+      impact: "Could enable data-driven content optimization"
     },
     {
       company: "Uber/Lyft",
       icon: <Users className="w-6 h-6 text-yellow-500" />,
       idea: "Introduce 'quiet reroute suggestions' based on real-time traffic stress detection.",
-      impact: "Reduced travel stress and better route planning"
+      impact: "Could reduce travel stress and improve route planning"
     },
     {
       company: "ChatGPT/Gemini",
       icon: <Lightbulb className="w-6 h-6 text-orange-500" />,
       idea: "Offer a 'transparency toggle' showing prompt breakdowns, context retention, and token logic to help users understand AI reasoning.",
-      impact: "Improved AI transparency and user understanding"
+      impact: "Could improve AI transparency and user understanding"
     }
   ];
 
   const achievements = [
     { metric: "2+ Years", label: "Product Management Experience", icon: <Briefcase className="w-5 h-5" /> },
-    { metric: "40%", label: "User Engagement Increase", icon: <TrendingUp className="w-5 h-5" /> },
-    { metric: "100+", label: "Lives Impacted", icon: <Users className="w-5 h-5" /> },
-    { metric: "95%", label: "Stakeholder Satisfaction", icon: <Award className="w-5 h-5" /> }
+    { metric: "15%", label: "Engagement Growth (Edsoma)", icon: <TrendingUp className="w-5 h-5" /> },
+    { metric: "60K+", label: "Users Onboarded", icon: <Users className="w-5 h-5" /> },
+    { metric: "1,500+", label: "Users Assisted (NYU)", icon: <Award className="w-5 h-5" /> }
   ];
 
   return (
@@ -131,14 +131,22 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
                 <span className="text-xl font-bold text-gray-800">Snehal Bondre</span>
               </div>
               
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={onToggleMode}
-                className="btn-primary flex items-center space-x-2"
-              >
-                <span>🎮 Try RPG Mode</span>
-              </motion.button>
+              <div className="flex items-center space-x-4">
+                <nav className="hidden md:flex items-center space-x-6">
+                  <a href="#about" className="text-gray-600 hover:text-gray-800 transition-colors">About</a>
+                  <a href="#experience" className="text-gray-600 hover:text-gray-800 transition-colors">Experience</a>
+                  <a href="#projects" className="text-gray-600 hover:text-gray-800 transition-colors">Projects</a>
+                  <a href="#testimonials" className="text-gray-600 hover:text-gray-800 transition-colors">Testimonials</a>
+                </nav>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={onToggleMode}
+                  className="btn-primary flex items-center space-x-2"
+                >
+                  <span>🎮 Try RPG Mode</span>
+                </motion.button>
+              </div>
             </div>
           </div>
         </nav>
@@ -254,7 +262,7 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
       </section>
 
       {/* About Section */}
-      <section className="px-6 md:px-12 py-16 bg-gray-50">
+      <section id="about" className="px-6 md:px-12 py-16 bg-gray-50">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -321,10 +329,14 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
       </section>
 
       {/* Experience Section */}
-      <ExperienceSection />
+      <div id="experience">
+        <ExperienceSection />
+      </div>
 
       {/* Projects Section */}
-      <ProjectsSection />
+      <div id="projects">
+        <ProjectsSection />
+      </div>
 
       {/* Leadership & Achievements */}
       <LeadershipSection />
@@ -333,7 +345,9 @@ export default function ProfessionalLayout({ isRPGMode = false, onToggleMode }: 
       <TechnicalSkills />
 
       {/* Testimonials */}
-      <TestimonialsSection />
+      <div id="testimonials">
+        <TestimonialsSection />
+      </div>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

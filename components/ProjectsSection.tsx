@@ -77,7 +77,7 @@ const projects: Project[] = [
     techStack: ['Python', 'SQL', 'Tableau', 'APIs', 'Data Visualization', 'Financial Analytics'],
     metrics: [
       { label: 'Data Processing', value: 'Real-time', icon: 'Zap' },
-      { label: 'Analysis Accuracy', value: '95%+', icon: 'Target' },
+      { label: 'Analysis Accuracy', value: '~95%', icon: 'Target' },
       { label: 'Time Saved', value: '80% reduction', icon: 'Clock' },
       { label: 'Dashboard Users', value: '50+ analysts', icon: 'Users' }
     ],
@@ -108,7 +108,7 @@ const projects: Project[] = [
     techStack: ['Python', 'Flask', 'React', 'PostgreSQL', 'Docker', 'Redis'],
     metrics: [
       { label: 'Integration Time', value: '75% reduction', icon: 'Clock' },
-      { label: 'API Response Time', value: '<200ms avg', icon: 'Zap' },
+      { label: 'API Response Time', value: '~200ms avg', icon: 'Zap' },
       { label: 'Error Rate', value: '95% reduction', icon: 'Target' },
       { label: 'Developer Adoption', value: '12+ teams', icon: 'Users' }
     ],
@@ -136,7 +136,7 @@ const projects: Project[] = [
     solution: 'Built a modern React website with TypeScript, integrated contact forms, SEO optimization, and responsive design for all devices.',
     techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Web3Forms', 'Vercel'],
     metrics: [
-      { label: 'Page Load Speed', value: '2.1s → 0.8s', icon: 'Zap' },
+      { label: 'Page Load Speed', value: '2.1s → 0.8s (62% faster)', icon: 'Zap' },
       { label: 'Mobile Traffic', value: '+180% increase', icon: 'Smartphone' },
       { label: 'Lead Generation', value: '+250% more inquiries', icon: 'Users' },
       { label: 'SEO Score', value: '95/100', icon: 'Search' }
@@ -168,7 +168,7 @@ const projects: Project[] = [
       { label: 'Waste Diversion', value: '+29% improvement', icon: 'TrendingUp' },
       { label: 'Per Capita Waste', value: '-13% reduction', icon: 'Target' },
       { label: 'Campus Coverage', value: 'Full campus', icon: 'Globe' },
-      { label: 'System Uptime', value: '99.5%', icon: 'Zap' }
+      { label: 'System Uptime', value: '~99%', icon: 'Zap' }
     ],
     challenges: [
       'Integrating multiple sensor types for accurate waste level detection',
